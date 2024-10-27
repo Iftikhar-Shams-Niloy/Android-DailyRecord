@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Daily Record</string>
+    <string name="anchor">anchor</string>
+    <string name="running">running</string>
+    <string name="study">Study</string>
+    <string name="stand_by">Break</string>
+    <string name="status">Status</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="studying">STUDYING</string>
+    <string name="on_a_break">ON A BREAK</string>
+    <string name="study_break_ratio"><![CDATA[Study & Break Ratio:]]></string>
+    <string name="status_header_text">STATUS</string>
+    <string name="title_activity_edit_studying_record">EditStudyingRecordActivity</string>
+</resources>

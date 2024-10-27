@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_study"
+        android:title="@string/study"
+        android:icon="@drawable/baseline_book"/>
+    <item android:id="@+id/nav_break"
+        android:title="@string/stand_by"
+        android:icon="@drawable/baseline_back_hand_24"/>
+    <item android:id="@+id/nav_status"
+        android:title="@string/status"
+        android:icon="@drawable/baseline_dashboard_24"/>
+</menu>

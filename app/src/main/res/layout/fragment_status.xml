@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FEDADA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_status_header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:src="@drawable/status_header"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status_header_text"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="bottom"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/frame_status_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/myColor2">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_study_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/myColor1"
+
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:id="@+id/text_view_study_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="12dp"
+                        android:text="Study Time:"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/text_view_study_total_time"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text = "0hrs 0mins"/>
+                    <TextView
+                        android:id="@+id/text_view_study_date_satus"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_study_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18sp"
+                        android:textColor="#666666"
+                        android:text = "14-Mar-2024"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/myColor2">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_break_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/myColor1"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/text_view_break_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text="Break Time:"/>
+                    <TextView
+                        android:id="@+id/text_view_break_time"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text = "0hrs 0mins"/>
+                    <TextView
+                        android:id="@+id/text_view_break_date"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_break_time"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18sp"
+                        android:textColor="#666666"
+                        android:text = "14-Mar-2024"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/myColor2">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_ratio_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/myColor1"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/text_view_ratio_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text="@string/study_break_ratio"/>
+                    <TextView
+                        android:id="@+id/text_view_ratio"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text = "0 : 0"/>
+                    <TextView
+                        android:id="@+id/text_view_ratio_date"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_ratio_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="12dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18sp"
+                        android:textColor="#666666"
+                        android:text = "14-Mar-2024"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
